@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     var btntoast = findViewById<Button>(R.id.btntoast)
 
 
-
+/* Mañana*/
 
         binding.btntoast.setOnClickListener{
             Toast.makeText(this, "hola soy toast", Toast.LENGTH_SHORT).show()
