@@ -28,7 +28,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnmostrar.setOnClickListener {
-            Snackbar.make(it, "hola soy nackbar",Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(it, "hola soy nackbar",Snackbar.LENGTH_SHORT)
+                .setAction("Cerrar"){
+
+                }
+                .show()
         }
 
     }
