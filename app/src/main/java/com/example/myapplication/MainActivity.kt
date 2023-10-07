@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -29,10 +30,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnmostrar.setOnClickListener {
             Snackbar.make(it, "hola soy nackbar",Snackbar.LENGTH_SHORT)
-                .setAction("Cerrar"){
+                .setAction(R.string.texto_cerrar){
 
-                }
-                .show()
+                    binding.btntoast.text = "texto toast xd"
+                }.setActionTextColor(getColor(R.color.blue)).show()
         }
 
     }
